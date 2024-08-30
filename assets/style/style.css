@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-100:#FF7F50;
+    --primary-200:#dd6236;
+    --primary-300:#8f1e00;
+    --accent-100:#8B4513;
+    --accent-200:#ffd299;
+    --text-100:#000000;
+    --text-200:#2c2c2c;
+    --bg-100:#F7EEDD;
+    --bg-200:#ede4d3;
+    --bg-300:#c4bcab;
+}
+
+body{
+    background-color: var(--accent-200);
+}
+
+.header-container{
+    background: white url('../images/header-background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 500px;
+}
+
+.nav-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1em;
+    width: 100%;
+}
+
+.logo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--bg-100);    
+    font-size: .8em;
+    width: 15%;
+    padding-left: 5em;
+}
+
+.pesquisa{
+    width: 15%;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+}
+
+.header-nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.header-nav-list a{
+    color: var(--bg-100);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.pesquisa img{
+    width: 2em;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-nav-list a:hover{
+    border-bottom: 1px solid var(--bg-200);
+}
+
+.text-img{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.text-img p{
+    font-size: 2.5em;
+}
+
+.text-img a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 2em;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    background-color: white;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+.text-img a:hover{
+    background-color: var(--accent-100);
+    color: #FF7F50;
+}
